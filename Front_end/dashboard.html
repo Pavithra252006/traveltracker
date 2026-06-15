@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Travel Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🌍 Travel Dashboard</h1>
+
+    <p>Welcome to your travel tracker</p>
+
+    <div class="input-section">
+      <input type="text" id="tripInput" placeholder="Enter your trip">
+      <button onclick="addTrip()">Add Trip</button>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search trips..." onkeyup="searchTrip()">
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Trip Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody id="tripTable"></tbody>
+</table>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
