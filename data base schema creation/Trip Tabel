@@ -1,0 +1,9 @@
+CREATE TABLE Trip (
+    TripID INT PRIMARY KEY,
+    UserID INT,
+    StartLocation VARCHAR(100),
+    EndLocation VARCHAR(100),
+    Distance FLOAT,
+    Duration VARCHAR(50),
+    Date DATE
+);
