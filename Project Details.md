@@ -1,108 +1,76 @@
-# Travel Tracker: A Mobile App for Capturing Trip Information
+# 🌍 Travel Tracker Website
 
-## Project Description
-
-Travel Tracker is a GPS-based mobile application that automatically captures and stores trip-related information such as start location, destination, travel distance, and travel duration. The application helps collect accurate travel data for transportation planning, travel analysis, and understanding travel patterns more effectively than traditional survey methods.
-
----
-
-## Problem Statement
-
-Transportation planning requires accurate travel data. Traditional travel surveys are time-consuming, expensive, and cover only a limited number of people. These limitations result in incomplete travel information and affect effective transportation planning. An automated solution is needed to collect reliable and real-time travel data.
+## 📌 Project Description
+Travel Tracker Website is a simple and interactive web application developed using HTML, CSS, and JavaScript. It helps users record and manage their travel trip details in a structured list format. The project focuses on basic frontend development concepts such as user interaction, event handling, and DOM manipulation. It is lightweight, easy to use, and suitable for beginner-level web development learning.
 
 ---
 
-## Project Objectives
-
-### Main Objective
-
-To develop a mobile application that automatically captures and stores trip-related information using GPS technology.
-
-### Specific Objectives
-
-* Record trip start and end locations.
-* Track travel distance and duration.
-* Store travel information securely.
-* Maintain travel history records.
-* Support transportation planning and travel analysis.
+## ❗ Problem Statement
+Many users find it difficult to manually track and organize their travel experiences. There is no simple tool for beginners to store and view their trip details in one place without using complex applications or databases.
 
 ---
 
-## Module List
-
-### 1. User Authentication Module
-
-* User Registration
-* User Login
-
-### 2. GPS Tracking Module
-
-* Capture Current Location
-* Track Travel Route
-
-### 3. Trip Management Module
-
-* Start Trip
-* End Trip
-* Record Trip Details
-
-### 4. Database Management Module
-
-* Store User Information
-* Store Trip Information
-* Retrieve Travel History
-
-### 5. Analytics Module
-
-* View Travel Records
-* Generate Travel Statistics
+## 🎯 Project Objectives
+- To create a simple travel tracking system
+- To allow users to add and view trip details
+- To improve user interaction using frontend technologies
+- To demonstrate basic web development skills
 
 ---
 
-## Table List
+## ⭐ Main Objective
+To develop a simple, user-friendly web application that allows users to record and manage their travel trip information efficiently.
 
-### User Table
+---
 
-| Field Name | Data Type    | Description            |
-| ---------- | ------------ | ---------------------- |
-| UserID     | INT          | Unique User Identifier |
-| Name       | VARCHAR(50)  | User Name              |
-| Email      | VARCHAR(100) | User Email Address     |
-| Password   | VARCHAR(100) | User Password          |
+## 🔹 Specific Objectives
+- Build a responsive user interface using HTML and CSS
+- Implement dynamic functionality using JavaScript
+- Allow users to add trip entries
+- Display trip list dynamically on the webpage
+- Ensure simple and clean design for easy use
 
-### Trip Table
+---
 
-| Field Name    | Data Type    | Description            |
-| ------------- | ------------ | ---------------------- |
-| TripID        | INT          | Unique Trip Identifier |
-| UserID        | INT          | User Reference         |
-| StartLocation | VARCHAR(100) | Starting Point         |
-| EndLocation   | VARCHAR(100) | Destination Point      |
-| Distance      | FLOAT        | Travel Distance        |
-| Duration      | VARCHAR(50)  | Travel Duration        |
-| TransportMode | VARCHAR(50)  | Mode of Transport      |
-| Date          | DATE         | Travel Date            |
+## 🧩 Modules List
+1. User Interface Module
+2. Trip Entry Module
+3. Trip Display Module
+4. Input Validation Module
+5. UI Interaction Module
 
-### Location Table
+---
 
-| Field Name | Data Type | Description                |
-| ---------- | --------- | -------------------------- |
-| LocationID | INT       | Unique Location Identifier |
-| TripID     | INT       | Trip Reference             |
-| Latitude   | DOUBLE    | Latitude Coordinate        |
-| Longitude  | DOUBLE    | Longitude Coordinate       |
-| Timestamp  | DATETIME  | Time of Location Capture   |
+## 📊 Table List (Data Structure)
 
-## Expected Outcome
+| Field Name | Description |
+|------------|-------------|
+| Trip Name  | Name of the travel destination |
+| Trip Date  | Date of travel (optional) |
+| Trip List  | Stores all added trips |
+| User Input | Input field for entering trip details |
 
-The Travel Tracker application is expected to provide an efficient and automated solution for collecting trip-related information. The system will accurately record travel details such as start location, destination, distance, and duration using GPS technology.
+---
 
-### Expected Results
+## 📈 Expected Outcome
+- A working travel tracker website
+- Users can add and view trips easily
+- Simple and interactive UI
+- Basic understanding of frontend development
 
-* Automated collection of travel data.
-* Accurate recording of trip information.
-* Secure storage of user and trip data.
-* Easy access to travel history records.
-* Reduced dependence on traditional travel surveys.
-* Improved transportation planning and analysis.
-* Foundation for future AI-based travel prediction and route recommendation systems.
+---
+
+## ✅ Expected Result
+The final output is a fully functional static website where users can input travel details and view them instantly in a list format. The system works smoothly in all modern web browsers without requiring any backend server.
+
+---
+
+## 🛠️ Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## 🚀 Conclusion
+This project successfully demonstrates a basic web-based Travel Tracker system that helps users manage their travel records in a simple and efficient way.
