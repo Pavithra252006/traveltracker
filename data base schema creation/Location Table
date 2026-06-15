@@ -1,0 +1,7 @@
+CREATE TABLE Location (
+    LocationID INT PRIMARY KEY,
+    TripID INT,
+    Latitude DOUBLE,
+    Longitude DOUBLE,
+    Timestamp DATETIME
+);
