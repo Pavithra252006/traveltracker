@@ -1,111 +1,82 @@
-body {
-  font-family: Arial;
-  text-align: center;
-  margin-top: 60px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-input {
-  padding: 10px;
-  width: 200px;
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#74ebd5,#9face6);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-button {
-  padding: 10px;
-  background: green;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.login-container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 25px;
-  background: white;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+.container{
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-.login-container input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
+h2{
+    text-align:center;
+    margin-bottom:20px;
 }
 
-.login-container button {
-  width: 100%;
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
 }
 
-#error {
-  color: red;
-  font-size: 14px;
-}
-/* ===== REGISTER & LOGIN STYLES ===== */
-
-.auth-container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 25px;
-  background: white;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#4CAF50;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
 }
 
-.auth-container input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
+button:hover{
+    background:#45a049;
 }
 
-.auth-container button {
-  width: 100%;
-  padding: 10px;
-  background: green;
-  color: white;
-  border: none;
-  cursor: pointer;
+p{
+    text-align:center;
+    margin-top:15px;
 }
 
-.auth-container button:hover {
-  background: darkgreen;
+a{
+    display:block;
+    text-align:center;
+    margin-top:5px;
+    text-decoration:none;
+}.trip-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
 
-#msg, #error {
-  font-size: 14px;
-  color: red;
-}
-.logout-btn {
-  margin-top: 20px;
-  background: red;
-  width: 100%;
+.trip-table th,
+.trip-table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
 }
 
-.logout-btn:hover {
-  background: darkred;
+.trip-table th{
+    background:#4CAF50;
+    color:white;
 }
 
-.input-section {
-  margin-bottom: 15px;
-}
-table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-  text-align: center;
-}
-
-th {
-  background: green;
-  color: white;
-}
-
-button {
-  margin: 2px;
-  padding: 5px;
-  cursor: pointer;
+.trip-table tr:nth-child(even){
+    background:#f2f2f2;
 }
