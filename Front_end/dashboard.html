@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard - Travel Tracker</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Travel Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <h1>🌍 Travel Dashboard</h1>
+    <h1>🌍 Travel Tracker</h1>
 
-    <p>Welcome to your travel tracker</p>
+    <input type="text" id="tripInput" placeholder="Enter Trip Name">
+    <button onclick="addTrip()">Add Trip</button>
 
-    <div class="input-section">
-      <input type="text" id="tripInput" placeholder="Enter your trip">
-      <button onclick="addTrip()">Add Trip</button>
-    </div>
+    <br><br>
 
-    <input type="text" id="searchInput" placeholder="Search trips..." onkeyup="searchTrip()">
+    <input type="text"
+           id="searchInput"
+           placeholder="Search Trip"
+           onkeyup="searchTrip()">
+<table class="trip-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Trip Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Trip Name</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-
-  <tbody id="tripTable"></tbody>
+    <tbody id="tripTable"></tbody>
 </table>
-    <button onclick="logout()" class="logout-btn">Logout</button>
 
-  </div>
+    <button class="logout-btn" onclick="logout()">
+        Logout
+    </button>
 
-  <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
